@@ -23,6 +23,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
 
         <!-- *********这个dependency不能少 -->
         <dependency>
@@ -57,25 +61,37 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.62</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional> <!-- 这个需要为 true 热部署才有效 -->
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.199</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.1</version>
         </dependency>
 
+
+        <!--        <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-devtools</artifactId>
+                    <optional>true</optional> &lt;!&ndash; 这个需要为 true 热部署才有效 &ndash;&gt;
+                </dependency>-->
+
         <!-- mysql-->
-        <dependency>
+      <!--  <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.21</version>
-        </dependency>
+        </dependency>-->
 
         <!-- jpa-->
-        <dependency>
+      <!--  <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
+        </dependency>-->
         
     </dependencies>
 
